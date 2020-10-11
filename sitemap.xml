@@ -8,6 +8,11 @@
   </url>
   
   <url>
+    <loc>https://blog.hanwu.me/projects/</loc>
+    <lastmod>2020-10-10T21:23:31+02:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://blog.hanwu.me/posts/</loc>
     <lastmod>2020-10-10T21:18:31+02:00</lastmod>
   </url>
@@ -23,23 +28,13 @@
   </url>
   
   <url>
-    <loc>https://blog.hanwu.me/posts/test/</loc>
-    <lastmod>2020-10-10T21:18:31+02:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://blog.hanwu.me/</loc>
     <lastmod>2020-10-10T21:18:31+02:00</lastmod>
   </url>
   
   <url>
-    <loc>https://blog.hanwu.me/posts/second-test/</loc>
-    <lastmod>2020-10-09T18:50:26+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://blog.hanwu.me/posts/test/</loc>
-    <lastmod>2020-10-09T18:23:46+02:00</lastmod>
+    <loc>https://blog.hanwu.me/posts/test-tag/</loc>
+    <lastmod>2020-10-10T21:18:31+02:00</lastmod>
   </url>
   
   <url>
