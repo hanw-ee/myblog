@@ -46,7 +46,7 @@ pygmentscodefencesguesssyntax = true
 
 [[menu.main]]
   name = "关于"
-  weight = 50
+  weight = 40
   identifier = "about"
   url = "/about/"
 
