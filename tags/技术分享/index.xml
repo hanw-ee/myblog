@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>技术分享 on 几度秋凉</title>
+    <link>https://blog.hanwu.me/tags/%E6%8A%80%E6%9C%AF%E5%88%86%E4%BA%AB/</link>
+    <description>Recent content in 技术分享 on 几度秋凉</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>Copyright 2019-{year} Han Wu. All rights reserved.</copyright>
+    <lastBuildDate>Mon, 12 Oct 2020 13:19:54 +0200</lastBuildDate><atom:link href="https://blog.hanwu.me/tags/%E6%8A%80%E6%9C%AF%E5%88%86%E4%BA%AB/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>搭建博客总结</title>
+      <link>https://blog.hanwu.me/posts/2020-10-12-%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E6%80%BB%E7%BB%93/</link>
+      <pubDate>Mon, 12 Oct 2020 13:19:54 +0200</pubDate>
+      
+      <guid>https://blog.hanwu.me/posts/2020-10-12-%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E6%80%BB%E7%BB%93/</guid>
+      <description>折腾了两天终于把个人博客搭建好了，总结一下经验和碰到的问题。 我使用的hugo框架，不用hexo是因为hexo在博客多了之后编译生成网页要用很长时间。但hexo貌似用的人更多，而且插件也更多。随便搜一下</description>
+    </item>
+    
+  </channel>
+</rss>
