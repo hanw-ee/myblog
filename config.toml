@@ -59,7 +59,7 @@ pygmentscodefencesguesssyntax = true
 
 
 [params]
-  subTitle = "人生如逆旅，我亦为行人"                                       # site's subTitle  # 网站二级标题
+  subTitle = "拣尽寒枝不肯栖，寂寞沙洲冷"                                       # site's subTitle  # 网站二级标题
   footerSlogan = "My spiritual home"                                   # site's footer slogan  # 网站页脚标语
   keywords = ["Han Wu","Blog"]                                  # site's keywords  # 网站关键字
   description = "Han Wu's blog"                        # site's description  # 网站描述
