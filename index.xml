@@ -7,7 +7,16 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>Copyright 2019-{year} Han Wu. All rights reserved.</copyright>
-    <lastBuildDate>Sat, 10 Oct 2020 21:18:31 +0200</lastBuildDate><atom:link href="https://blog.hanwu.me/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 12 Oct 2020 13:19:54 +0200</lastBuildDate><atom:link href="https://blog.hanwu.me/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>搭建博客总结</title>
+      <link>https://blog.hanwu.me/posts/2020-10-12-%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E6%80%BB%E7%BB%93/</link>
+      <pubDate>Mon, 12 Oct 2020 13:19:54 +0200</pubDate>
+      
+      <guid>https://blog.hanwu.me/posts/2020-10-12-%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E6%80%BB%E7%BB%93/</guid>
+      <description>总结</description>
+    </item>
+    
     <item>
       <title>关于</title>
       <link>https://blog.hanwu.me/about/</link>
