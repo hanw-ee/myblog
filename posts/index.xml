@@ -7,22 +7,22 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>Copyright 2019-{year} Han Wu. All rights reserved.</copyright>
-    <lastBuildDate>Sat, 17 Oct 2020 15:52:33 +0200</lastBuildDate><atom:link href="https://blog.hanwu.me/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 17 Oct 2020 16:08:28 +0200</lastBuildDate><atom:link href="https://blog.hanwu.me/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>记柳宗元</title>
-      <link>https://blog.hanwu.me/posts/2020-10-17-lzy/</link>
-      <pubDate>Sat, 17 Oct 2020 15:52:33 +0200</pubDate>
+      <link>https://blog.hanwu.me/posts/201017-lzy/</link>
+      <pubDate>Sat, 17 Oct 2020 16:08:28 +0200</pubDate>
       
-      <guid>https://blog.hanwu.me/posts/2020-10-17-lzy/</guid>
+      <guid>https://blog.hanwu.me/posts/201017-lzy/</guid>
       <description>个人对天文地理历史哲学，各种东西都感兴趣。所以想在有空闲时间时，在博客上选择性的写一下自己了解学习到的东西，防止看一遍就忘记了，碰到有趣的内容也能分享给亲朋好友。作为一个半罐子，想到哪写到哪，大家阅读</description>
     </item>
     
     <item>
       <title>搭建博客总结</title>
-      <link>https://blog.hanwu.me/posts/2020-10-12-bkzj/</link>
+      <link>https://blog.hanwu.me/posts/201010-bkzj/</link>
       <pubDate>Mon, 12 Oct 2020 13:19:54 +0200</pubDate>
       
-      <guid>https://blog.hanwu.me/posts/2020-10-12-bkzj/</guid>
+      <guid>https://blog.hanwu.me/posts/201010-bkzj/</guid>
       <description>折腾了两天终于把个人博客搭建好了，总结一下经验和碰到的问题。 我使用的hugo框架，不用hexo是因为hexo在博客多了之后编译生成网页要用很长时间。但hexo貌似用的人更多，而且插件也更多。随便搜一下</description>
     </item>
     
