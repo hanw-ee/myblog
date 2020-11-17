@@ -112,17 +112,17 @@
                     </div>
                     <div class="post_content markdown"><p>最近在学习 <em>Real Analysis</em> 和 <em>Measure Theory</em> ，深感概率论的精妙和复杂。我对概率论的理解还停留在本科的阶段，以前觉得自己“懂”概率论，现在才发现自己一点都不懂。这里只探讨一下概率论最初级的入门知识点。</p>
 <p>说到什么是概率，大家脑海中估计都浮现出一种说不清道不明的感受，或者说更像一种直觉。红黄蓝3个球抽出一个球，那直觉上抽中红球的概率自然是$1/3$。 如果世上一切都是离散的，由一个个孤立的小点组成的，那凭这种直觉就行了，我们也不需要进一步研究了。问题是到了连续随机变量上，事情就发生变化了。再按这种简陋的直觉处理问题，会有很多现象无法解释，这时候我们就需要对到底什么是概率，又是在什么情况下会存在概率等等看似基础但实际非常重要的问题进行研究。</p>
-<p>我们先讨论$countable$ :</p>
+<p>我们先讨论$\textit{countable}$ :</p>
 <p>Let A be a set, we say that</p>
 <ol>
-<li>A is $finite$ if there is a 1-1 corespondence(一一对应) between A and the first N  positive integers or A is a empty set $\empty$.</li>
-<li>A is $infinite$ if it is not finite.</li>
+<li>A is $\textit{finite}$ if there is a 1-1 correspondence between A and the first N  positive integers or A is a empty set $\emptyset$.</li>
+<li>A is $\textit{infinite}$​ if it is not finite.</li>
 <li>A is $\textit{countably infinite}$ if $N \to \infty$.</li>
-<li>A is $countable$ if it is either finite or countably infinite.</li>
-<li>A is $uncountable$ if it is not countable.</li>
+<li>A is $\textit{countable}$ if it is either finite or countably infinite.</li>
+<li>A is $\textit{uncountable}$ if it is not countable.</li>
 </ol>
-<p>注意这里如果是一个sequence: $A_1,A_2,\cdots,A_n \ with\  n \in \cal{N}$, 我们也说这个sequence可数。</p>
-<p>我们从本科阶段对概率的理解出发， 假设一个随机变量$X$，平均的分布在$[0,1]$之间，即$X \sim$ <strong>Uniform</strong>$[0,1]$。假设$A$是$[0,1]$的一个子集，$A$的概率记作$P(A)$。 根据对概率的感知，我们自然会对这个概率$P$有以下几个要求：</p>
+<p>注意这里如果是一个sequence: $A_1,A_2,\cdots,A_n $ with $  n \in \cal{N}$, 我们也说这个sequence可数。</p>
+<p>我们从本科阶段对概率的理解出发， 假设一个随机变量$X$，平均的分布在$[0,1]$之间，即$X \sim$ $\text{Uniform}[0,1]$。假设$A$是$[0,1]$的一个子集，$A$的概率记作$P(A)$。 根据对概率的感知，我们自然会对这个概率$P$有以下几个要求：</p>
 <ol>
 <li>
 <p>$P([a,b])=P((a,b])=P([a,b))=P((a,b))=b-a$, $0\leq a \leq b \leq 1$</p>
@@ -130,7 +130,7 @@
 <li>
 <p>对于<em>可数</em>的<em>互不相交</em>的子集$A_1, A_2, A_3,\cdots , A_n$</p>
 <p>$P(A_1 \cup A_2 \cup \cdots \cup A_n)=P(A_1)+P(A_2)+\cdots+P(A_n)$ 								这条性质叫: $\textit{countably additive}$</p>
-<p>（这里可以看到为什么我们关心countable， 不然的话我们能得到$1=P([0,1])=\sum_{x\in[0,1]}P(x)=0$，因为[0,1]之间的点是不可数的。）</p>
+<p>（这里可以看到为什么我们关心countable,不然的话我们能得到$1=P([0,1])=\sum_{x\in[0,1]}P(x)=0.$ 这里错误出在[0,1]之间的点是不可数的。）</p>
 </li>
 <li>
 <p>我们如果左右平移$A$, $A$的概率不应该发生变化。</p>
@@ -148,32 +148,33 @@
 <p>The sample space: $\Omega$ (我们举的例子里就是[0,1])</p>
 </li>
 <li>
-<p>The $\sigma-algebra$ or $\sigma-field$: $\cal{F}$ , where $\cal{F}$ is a collection of subsets of $\Omega$, containing $\Omega$ itself and the empty set $\empty$. (即这个&rdquo;$measurable$&ldquo;子集，我们先不管这个子集是什么样的，先定义这样一个可以定义概率的集和)。这里$\sigma-field$只是个名字，意思是这个集合具有以下性质：</p>
+<p>The $\sigma$-algebra or $\sigma$-field: $\cal{F}$ , where $\cal{F}$ is a collection of subsets of $\Omega$, containing $\Omega$ itself and the empty set $\emptyset$. (即这个&rdquo;$measurable$&ldquo;子集，我们先不管这个子集是什么样的，先定义这样一个可以定义概率的集和)。这里$\sigma$-field​只是个名字，意思是这个集合具有以下性质：</p>
 <ol>
 <li>For any subset $A \in \Omega$, if $A \in \cal{F}$, then $A^c \in \cal{F}$.</li>
 <li>For any countable collections of subsets $A_1, A_2, A_3,\cdots , A_n \in \Omega $ , if $A_i \in \cal{F}$, then $A_1 \cup A_2 \cup \cdots \cup A_n \in \cal{F}$ .</li>
 </ol>
 </li>
 <li>
-<p>The $\textit{probability measure}$ , $P: \cal{F} \to [0,1]$, with $P(\empty)=0, P(\Omega)=1$， such that $P$ is countably additive.</p>
+<p>The $\textit{probability measure}$  $P: \cal{F} \to [0,1]$, with $P(\emptyset)=0, P(\Omega)=1$， such that $P$ is countably additive.</p>
 </li>
 </ul>
 <p>想定义概率，必须找到这个probability space。</p>
 <p>对于可数的离散集合:</p>
-<p><em>Theorem 1: Let $\Omega$ be a finite or countable non-enpty set. Let p: $\Omega \to [0,1]$ be any function satisfying $\sum <em>{\omega \in \Omega} p(\omega)=1 $. Then there is a valid prability triple  $(\Omega, \cal{F}, P)$  where $\cal{F}$ is the collection of all subsets of $\Omega$, and for $A \in \cal{ F}, P(A)=\sum</em>{\omega \in A} p(\omega)$.</em></p>
+<p>Theorem 1: Let $\Omega$ be a finite or countable non-enpty set. Let p: $\Omega \to [0,1]$ be any function satisfying $\sum _{\omega \in \Omega} p(\omega)=1 $. Then there is a valid prability triple  $(\Omega, \cal{F}, P)$  where $\cal{F}$ is the collection of all subsets of $\Omega$, and for $A \in \cal{ F}$,</p>
+<p>$ P(A)=\sum_{\omega \in A} p(\omega)$.</p>
 <p>例如，现在我们可以定义什么是Uniform distribution :</p>
-<p><em>Example: Let $\Omega$  be  any finite non-empty set,  $\cal{F}$ be the  collection of all subsets of $\Omega$, and $P(A)= |A| / |\Omega|$ for all $A \in \cal{F}$ (where $|A|$ is the cardinality of the set $A$ ).  Then $(\Omega, \cal{F}, P)$ is a valid probability triple, called the</em> <strong>Uniform distribution</strong> <em>on $\Omega$ , written</em> <strong>Uniform $(\Omega)$</strong>.</p>
+<p>Example: Let $\Omega$  be  any finite non-empty set,  $\cal{F}$ be the  collection of all subsets of $\Omega$, and $P(A)= |A| / |\Omega|$ for all $A \in \cal{F}$ (where $|A|$ is the cardinality of the set $A$ ).  Then $(\Omega, \cal{F}, P)$ is a valid probability triple, called the uniform distribution  on $\Omega$ , written Uniform$(\Omega)$.</p>
 <p>可是对于连续集合呢? 我们另$\Omega=[0,1]$, 那么现在$\cal{F}$ 是什么。如果我们定义一个集合 $\cal{J}$:</p>
-<p>$$\cal{J}={\text{all intervals contained in [0, 1]}}$$ . It can be show that $\cal{J}$ is a <em>semialgebra</em> of sunbets of $\Omega$, meaning that it contains $\empty$ and $\Omega$, it is closed under finite intersection, and the complement of any element of $\cal{J}$ is equal to a finite disjoint union of elements of $\cal{J}$.</p>
+<p>$$\cal{J}=\lbrace \text{all intervals contained in [0, 1]} \rbrace$$  It can be show that $\cal{J}$ is a <em>semialgebra</em> of sunbets of $\Omega$, meaning that it contains $\emptyset$ and $\Omega$, it is closed under finite intersection, and the complement of any element of $\cal{J}$ is equal to a finite disjoint union of elements of $\cal{J}$.</p>
 <p>很显然， 我们应该要有$\cal{F} \supseteq \cal{J}$。 接下来就是最重要的定理：</p>
-<p><em>Theorem 2 : (The Extension Theorem)  Let $\cal{J}$ be a semialgebra of subsets of $\Omega$. Let $P: \cal{J} \to [0,1]$ with $P(\empty)=0$ and $P(\Omega)=1$, satisfying the dinite suprtadditivity property that</em></p>
-<p>$P (\cup_{i=1}^kA_i) \geq \sum_{i=1}^k A_i,\ where \ \cup_{i=1}^kA_i= \ A_1 \cup A_2 \cup \cdots \cup A_k, whenever \ A_1,\cdots,A_k \in \cal{J} \ and \cup_{i=1}^kA_i \in \cal{J} \ and  \ the$ {$A_i$} $are \ disjoint$.</p>
-<p><em>and also the countable monotonicity property that</em></p>
+<p>Theorem 2 : (The Extension Theorem)  Let $\cal{J}$ be a semialgebra of subsets of $\Omega$. Let $P: \cal{J} \to [0,1]$ with $P(\emptyset)=0$ and $P(\Omega)=1$, satisfying the dinite suprtadditivity property that</p>
+<p>$P (\cup_{i=1}^kA_i) \geq \sum_{i=1}^k A_i$, where $ \cup_{i=1}^kA_i= \ A_1 \cup A_2 \cup \cdots \cup A_k,$ whenever $A_1,\cdots,A_k \in \cal{J} $ and $\cup_{i=1}^kA_i \in \cal{J} $ and  the $ {A_i} $ are  disjoint​.</p>
+<p>and also the countable monotonicity property that</p>
 <p>$P(A) \leq \sum_{n}P(A_n) \ for A, A_1,A_2,\cdots \in \cal{J} \ with \ A \subseteq \cup_{i}A_i $</p>
-<p><em>Then there is a $\sigma$-algebra $\cal{M}  \supseteq \cal{J}$, and a countably additive probability measure $P^\ast$ on $\cal{M}$, such that $P(A^\ast)=P(A)$ for all $A \in \cal{J}$.</em> * That is $(\Omega, \cal{M},\cal{J})$ is a valid probability measure space, which agrees with our previous probabilities on $ \cal{J}$*.</p>
-<p>证明：略。（证明太长）</p>
+<p>Then there is a $\sigma$-algebra $\cal{M}  \supseteq \cal{J}$, and a countably additive probability measure $P^\ast$ on $\cal{M}$, such that $P(A^\ast)=P(A)$ for all $A \in \cal{J}$. That is $(\Omega, \cal{M},\cal{J})$ is a valid probability measure space, which agrees with our previous probabilities on $ \cal{J}$.</p>
+<p>证明：略。（证明太长，几页纸）</p>
 <p>这条定理告诉我们，我们只用定义一个映射 $P: \cal{J} \to [0,1]$， 这个并不是概率，只是一个映射或者说函数。但是可以证明存在一个概率measure $P^\ast$ ,而且$P^\ast(A)=P(A)$ for all $A \in \cal{J}$。所以我们的概率是定义在一个$\sigma$-algebra $\cal{M}$ 上，概率是$P^\ast$ 但是因为$P^\ast=P$, 我们一般用$P$代指$P^\ast$。</p>
-<p>那么回到$\Omega=[0,1]$, 我们定义 $$\cal{J}={\text{all intervals contained in [0, 1]}}$$, for $I \in \cal{J}$, we let $P(I)$ be the length of $I$。 可以验证这个$P$ 满足上面这个定理，所以存在一个probability measure space 只是因为$I$的概率$P^\ast(I)$等于$P(I)$, 所以我们用$P(I)$ 代指概率。这个也叫做 $Uniform \ distribution$ or $Lebesgue \ measure$ on [0,1]。</p>
+<p>那么回到$\Omega=[0,1]$, 我们定义 $\cal{J}=\lbrace \text{all intervals contained in [0, 1]}\rbrace$, for $I \in \cal{J}$, we let $P(I)$ be the length of $I$。 可以验证这个$P$ 满足上面这个定理，所以存在一个probability measure space 只是因为$I$的概率$P^\ast(I)$等于$P(I)$, 所以我们用$P(I)$ 代指概率。这个也叫做 uniform  distribution​ or ​Lebesgue measure​ on [0,1]。</p>
 <p>Reference:</p>
 <blockquote>
 <p>[1] J. S. Rosenthal, <em>A First Look at Rigorous Probability Theory</em>, 2nd ed. WORLD SCIENTIFIC, 2006.</p>
