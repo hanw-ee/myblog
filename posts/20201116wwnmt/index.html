@@ -121,7 +121,7 @@
 <li>A is $\textit{countable}$ if it is either finite or countably infinite.</li>
 <li>A is $\textit{uncountable}$ if it is not countable.</li>
 </ol>
-<p>注意这里如果是一个sequence: $A_1,A_2,\cdots,A_n $ with $  n \in \cal{N}$, 我们也说这个sequence可数。</p>
+<p>注意这里如果是一个sequence: $A_1,A_2,\cdots,A_n $ with $  n \in \cal{N}$, 我们也说这个sequence可数。 自然数肯定可数，整数也是可数的，有理数可数因为有理数可以表示成两个整数的比值，无理数不可数。</p>
 <p>我们从本科阶段对概率的理解出发， 假设一个随机变量$X$，平均的分布在$[0,1]$之间，即$X \sim$ $\text{Uniform}[0,1]$。假设$A$是$[0,1]$的一个子集，$A$的概率记作$P(A)$。 根据对概率的感知，我们自然会对这个概率$P$有以下几个要求：</p>
 <ol>
 <li>
@@ -174,9 +174,9 @@
 <p>$P(A) \leq \sum_{n}P(A_n) $ for $ A, A_1,A_2,\cdots \in \cal{J} $ with $ \ A \subseteq \cup_{i}A_i $</p>
 <p>Then there is a $\sigma$-algebra $\cal{M}  \supseteq \cal{J}$, and a countably additive probability measure $P^\ast$ on $\cal{M}$, such that $P(A^\ast)=P(A)$ for all $A \in \cal{J}$. That is $(\Omega, \cal{M},\cal{J})$ is a valid probability measure space, which agrees with our previous probabilities on $ \cal{J}$.</p>
 <p>证明：略。（证明太长，几页纸）</p>
-<p>这条定理告诉我们，我们只用定义一个映射 $P: \cal{J} \to [0,1]$， 这个并不是概率，只是一个映射或者说函数。但是可以证明存在一个概率measure $P^\ast$ ,而且$P^\ast(A)=P(A)$ for all $A \in \cal{J}$。所以我们的概率是定义在一个$\sigma$-algebra $\cal{M}$ 上，概率是$P^\ast$ 但是因为$P^\ast=P$, 我们一般用$P$代指$P^\ast$。</p>
+<p>这条定理告诉我们，我们只用定义一个映射 $P: \cal{J} \to [0,1]$， 这个并不是概率，只是一个映射或者说函数。但是可以证明存在一个概率measure $P^\ast$ ,而且$P^\ast(A)=P(A)$ for all $A \in \cal{J}$。所以我们的概率是定义在一个$\sigma$-algebra $\cal{M}\supseteq \cal{J} $ 上，概率是$P^\ast$ 但是因为$P^\ast=P$, 我们一般用$P$代指$P^\ast$。</p>
 <p>那么回到$\Omega=[0,1]$, 我们定义 $\cal{J}=\lbrace \text{all intervals contained in [0, 1]}\rbrace$, for $I \in \cal{J}$, we let $P(I)$ be the length of $I$。 可以验证这个$P$ 满足上面这个定理，所以存在一个probability measure space 只是因为$I$的概率$P^\ast(I)$等于$P(I)$, 所以我们用$P(I)$ 代指概率。这个也叫做 uniform  distribution​ or ​Lebesgue measure​ on [0,1]。</p>
-<p>可以简单理解为概率最深只能定义到区间这一层级，对于某一点的概率为0，也是因为我们把这个点当成长度为0的区间。所以对于之前的问题，$A$是$[0,1/2]$之间的所有无理数，那么$A$的概率。这个并不是你不知道它的概率是多少，而是它的概率就不存在。</p>
+<p>可以简单理解为概率最深只能定义到区间这一层级，对于某一点的概率为0，也是因为我们把这个点当成长度为0的区间。所以对于之前的问题，$A$是$[0,1/2]$之间的所有无理数，那么$A$的概率。这个并不是你不知道它的概率是多少，而是它的概率就不存在, $A \notin \cal{M}$.</p>
 <p>Reference:</p>
 <blockquote>
 <p>[1] J. S. Rosenthal, <em>A First Look at Rigorous Probability Theory</em>, 2nd ed. WORLD SCIENTIFIC, 2006.</p>
