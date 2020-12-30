@@ -140,7 +140,7 @@
 <p>不幸的是，我们能够证明以下结论：</p>
 <p>There does not exist a  definition of P(A), defined on all subsets A $\in$ [0,1], satisfying 1,2,3.</p>
 <p>证明：略</p>
-<p>即对于所有的$[0,1]$的子集，不存在一个可以同时满足1，2，3要求的概率定义。 重点就是这个所有的子集。例如，我可以问你一个问题，如果$A$是$[0,1/2]$之间的所有无理数，那么$A$的概率是多少。我们之前对概率的理解都是建立在一些“典型”的子集上，像$[a,b]$一个区间那么概率就是$b-a$，但是对于$[0,1]$之内的子集，有很多子集(像我刚刚举的那个无理数的例子)是无法定义出概率的。我们想定义的概率$P$， 本身是对一个集合$A$的&quot;$measure$&quot;，这个$measure$的值就是$P(A)$，也就是说：</p>
+<p>即对于所有的$[0,1]$的子集，不存在一个可以同时满足1，2，3要求的概率定义。 重点就是这个所有的子集。我们之前对概率的理解都是建立在一些“典型”的子集上，像$[a,b]$一个区间那么概率就是$b-a$，但是对于$[0,1]$之内的子集，有很多子集(像我刚刚举的那个无理数的例子)是无法定义出概率的。我们想定义的概率$P$， 本身是对一个集合$A$的&quot;$measure$&quot;，这个$measure$的值就是$P(A)$，也就是说：</p>
 <p>we must restrict the definition of probability measure to certain &ldquo;measurable&rdquo; sets.</p>
 <p>即，我们的概率不是简单定义在$[0,1]$上的，概率是定义在$[0,1]$的一部分&quot;$measurable$&ldquo;子集上的。</p>
 <p>我们定义$\textit{probability measure space}$ ：$(\Omega,\cal{F}, P)$</p>
@@ -172,11 +172,11 @@
 <p>$P (\cup_{i=1}^kA_i) \geq \sum_{i=1}^k A_i$, where $ \cup_{i=1}^kA_i= \ A_1 \cup A_2 \cup \cdots \cup A_k,$ whenever $A_1,\cdots,A_k \in \cal{J} $ and $\cup_{i=1}^kA_i \in \cal{J} $ and  the $ {A_i} $ are  disjoint​.</p>
 <p>and also the countable monotonicity property that</p>
 <p>$P(A) \leq \sum_{n}P(A_n) $ for $ A, A_1,A_2,\cdots \in \cal{J} $ with $ \ A \subseteq \cup_{i}A_i $</p>
-<p>Then there is a $\sigma$-algebra $\cal{M}  \supseteq \cal{J}$, and a countably additive probability measure $P^\ast$ on $\cal{M}$, such that $P(A^\ast)=P(A)$ for all $A \in \cal{J}$. That is $(\Omega, \cal{M},\cal{J})$ is a valid probability measure space, which agrees with our previous probabilities on $ \cal{J}$.</p>
-<p>证明：略。（证明太长，几页纸）</p>
+<p>Then there is a $\sigma$-algebra $\cal{M}  \supseteq \cal{J}$, and a countably additive probability measure $P^\ast$ on $\cal{M}$, such that $P(A^\ast)=P(A)$ for all $A \in \cal{J}$. That is $(\Omega, \cal{M},\cal{P}^\ast)$ is a valid probability measure space, which agrees with our previous probabilities on $ \cal{J}$.</p>
+<p>证明：略。</p>
 <p>这条定理告诉我们，我们只用定义一个映射 $P: \cal{J} \to [0,1]$， 这个并不是概率，只是一个映射或者说函数。但是可以证明存在一个概率measure $P^\ast$ ,而且$P^\ast(A)=P(A)$ for all $A \in \cal{J}$。所以我们的概率是定义在一个$\sigma$-algebra $\cal{M}\supseteq \cal{J} $ 上，概率是$P^\ast$ 但是因为$P^\ast=P$, 我们一般用$P$代指$P^\ast$。</p>
 <p>那么回到$\Omega=[0,1]$, 我们定义 $\cal{J}=\lbrace \text{all intervals contained in [0, 1]}\rbrace$, for $I \in \cal{J}$, we let $P(I)$ be the length of $I$。 可以验证这个$P$ 满足上面这个定理，所以存在一个probability measure space 只是因为$I$的概率$P^\ast(I)$等于$P(I)$, 所以我们用$P(I)$ 代指概率。这个也叫做 uniform  distribution​ or ​Lebesgue measure​ on [0,1]。</p>
-<p>可以简单理解为概率最深只能定义到区间这一层级，对于某一点的概率为0，也是因为我们把这个点当成长度为0的区间。所以对于之前的问题，$A$是$[0,1/2]$之间的所有无理数，那么$A$的概率。这个并不是你不知道它的概率是多少，而是它的概率就不存在, $A \not\subset \cal{M}$.</p>
+<p>可以简单理解为概率最深只能定义到区间这一层级，对于某一点的概率为0，也是因为我们把这个点当成长度为0的区间。</p>
 <p>Reference:</p>
 <blockquote>
 <p>[1] J. S. Rosenthal, <em>A First Look at Rigorous Probability Theory</em>, 2nd ed. WORLD SCIENTIFIC, 2006.</p>
